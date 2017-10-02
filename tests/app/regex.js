@@ -42,6 +42,7 @@ describe('regular expressions', function() {
     expect(regexAnswers.matchesPattern('800-55-1212')).to.eql(false);
   });
 
+  // TODO: LEFTOFF
   it('you should be able to detect correctly-formatted monetary amounts in USD', function() {
     expect(regexAnswers.isUSD('$132.03')).to.eql(true);
     expect(regexAnswers.isUSD('$32.03')).to.eql(true);

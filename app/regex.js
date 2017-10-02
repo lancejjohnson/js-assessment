@@ -6,6 +6,7 @@ exports.regexAnswers = {
   },
 
   containsRepeatingLetter: function(str) {
+    return (/([a-z])\1+/i).test(str);
   },
 
   endsWithVowel: function(str) {
